@@ -1,24 +1,153 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className=" bg-slate-700 h-dvh ">
+        <div className="h-dvh">
+          <header className=" w-full  bg-amber-500 fixed">
+            header
+            <nav class="bg-white dark:bg-amber-500 fixed w-full  dark:border-gray-600  ">
+              <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+                <a
+                  href=""
+                  class="flex items-center space-x-3 rtl:space-x-reverse"
+                >
+                  <img />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">
+                    BSR
+                  </span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                  <button
+                    type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Get started
+                  </button>
+                  <button
+                    data-collapse-toggle="navbar-sticky"
+                    type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 17 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                  id="navbar-sticky"
+                >
+                  <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg bg-ameber-500 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-ameber-500 dark:bg-ameber-500 md:dark:bg-ameber-500 dark:">
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                        aria-current="page"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                      >
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                      >
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <div className="h-dvh   bg-slate-950">banner</div>
+        </div>
+        <div className="h-dvh bg-black">
+          <div className="h-1/2 bg-slate-400">info about product</div>
+          <div className="h-1/2 bg-slate-950">visual rep</div>
+        </div>
+        <div className="h-dvh">
+          <div className="h-1/2 bg-white">testemony</div>
+
+          <div className="h-1/2 bg-amber-500">Q&A</div>
+        </div>
+        <div className="h-dvh bg-white">
+          <div className="h-1/2 bg-slate-950">signup now</div>
+          <div className="h-1/2 bg-amber-500">
+            contact
+            <footer class="mt-20 xl:mt-32 mx-auto w-full relative text-center bg-amber-500 text-black">
+              <div class="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">
+                <h2 class="font-bold text-3xl xl:text-4xl leading-snug">
+                  Ready to get your productivity back?
+                  <br />
+                  Start your free trial today.
+                </h2>
+                <a
+                  class="mt-8 text-white xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-slate-950 rounded-full shadow-xl border border-transparent hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
+                  href="#"
+                >
+                  Sign Up
+                </a>
+                <div class="mt-14 xl:mt-20">
+                  <nav class="flex flex-wrap justify-center text-lg font-medium">
+                    <div class="px-5 py-2">
+                      <a href="#">Contact</a>
+                    </div>
+                    <div class="px-5 py-2">
+                      <a href="#">Pricing</a>
+                    </div>
+                    <div class="px-5 py-2">
+                      <a href="#">Privacy</a>
+                    </div>
+                    <div class="px-5 py-2">
+                      <a href="#">Terms</a>
+                    </div>
+                    <div class="px-5 py-2">
+                      <a href="#">Twitter</a>
+                    </div>
+                  </nav>
+                  <p class="mt-7 text-base">© 2023 XYZ, LLC</p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
