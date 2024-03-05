@@ -1,129 +1,56 @@
-import React from "react";
+import React, { useState } from 'react';
+import { FiPlus, FiMinus } from 'react-icons/fi'; // Import Feather Icons
 
-function FAQ() {
+
+const Faq = () => {
+  const [expandedAccordion, setExpandedAccordion] = useState(null);
+
+  const toggleAccordion = (accordionId) => {
+    setExpandedAccordion(expandedAccordion === accordionId ? null : accordionId);
+  };
+
   return (
-    <div className="h-full">
-      <h1 className=" text-center text-7xl">FAQ</h1>
-      <ul class="max-w-6xl mx-auto mt-20 divide-y  shadow shadow-blue-600 rounded-xl bg-slate-950 text-white">
-        <li>
-          <details class="group">
-            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
-              <svg
-                class="w-5 h-5 text-gray-500 transition group-open:rotate-90"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                ></path>
-              </svg>
-              <span>What am I getting as a Premium Member?</span>
-            </summary>
-
-            <article class="px-4 pb-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-                ipsum sapien. Vestibulum molestie porttitor augue vitae
-                vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
-                tellus.
+    <div className="bg-bg text-gray container mx-auto p-16">
+      <h2 className="text-4xl font-bold mb-8">Frequently Asked Questions</h2>
+      <div className="accordion">
+        {[1, 2, 3, 4, 5].map((index) => (
+          <div
+            key={index}
+            className={`accordion-item border-b border-black ${
+              expandedAccordion === `accordion-button-${index}` ? 'border-black' : ''
+            }`}
+          >
+            <button
+              id={`accordion-button-${index}`}
+              aria-expanded={expandedAccordion === `accordion-button-${index}`}
+              onClick={() => toggleAccordion(`accordion-button-${index}`)}
+              className="relative block w-full text-left py-4 px-0 text-text font-normal bg-none outline-none hover:text-blue focus:text-blue"
+            >
+              <span className="accordion-title pr-6">Accordion Title {index}</span>
+              <span className="icon absolute top-4 right-0 w-5 h-5 border border-solid border-black">
+                {expandedAccordion === `accordion-button-${index}` ? (
+                  <FiMinus className="w-full h-full" />
+                ) : (
+                  <FiPlus className="w-full h-full" />
+                )}
+              </span>
+            </button>
+            <div
+              className={`accordion-content opacity-0 max-h-0 overflow-hidden transition-all duration-200 ease-linear ${
+                expandedAccordion === `accordion-button-${index}` ? 'opacity-100 max-h-36' : ''
+              }`}
+            >
+              <p className="text-base font-light my-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis
+                ut. Ut tortor pretium viverra suspendisse potenti.
               </p>
-            </article>
-          </details>
-        </li>
-        <li>
-          <details class="group">
-            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
-              <svg
-                class="w-5 h-5 text-gray-500 transition group-open:rotate-90"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                ></path>
-              </svg>
-              <span>What am I getting as a Premium Member?</span>
-            </summary>
-
-            <article class="px-4 pb-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-                ipsum sapien. Vestibulum molestie porttitor augue vitae
-                vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
-                tellus.{" "}
-              </p>
-            </article>
-          </details>
-        </li>
-        <li>
-          <details class="group">
-            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
-              <svg
-                class="w-5 h-5 text-gray-500 transition group-open:rotate-90"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                ></path>
-              </svg>
-              <span>What am I getting as a Premium Member?</span>
-            </summary>
-
-            <article class="px-4 pb-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-                ipsum sapien. Vestibulum molestie porttitor augue vitae
-                vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
-                tellus.{" "}
-              </p>
-            </article>
-          </details>
-        </li>
-        <li>
-          <details class="group">
-            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
-              <svg
-                class="w-5 h-5 text-gray-500 transition group-open:rotate-90"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                ></path>
-              </svg>
-              <span>What am I getting as a Premium Member?</span>
-            </summary>
-
-            <article class="px-4 pb-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-                ipsum sapien. Vestibulum molestie porttitor augue vitae
-                vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
-                tellus.{" "}
-              </p>
-            </article>
-          </details>
-        </li>
-      </ul>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
-export default FAQ;
+export default Faq;
