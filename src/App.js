@@ -34,9 +34,27 @@ function App() {
         <div className="">
           <div className=" bg-slate-500">
             <TestimonialSection16 />
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNtOXUzMjJzemxjeDBxZmlnY2U5NTR5NnZhbThpbHJmeHg0aHV5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OyTOdV7tcPpXpJrLLi/giphy.gif"
+              alt=""
+            />
           </div>
 
           <div className=" bg-amber-500 p-10 ">
+            <div id="arrowAnim" className="h-10 w-10">
+              <div class="arrowSliding">
+                <div class="arrow"></div>
+              </div>
+              <div class="arrowSliding delay1">
+                <div class="arrow"></div>
+              </div>
+              <div class="arrowSliding delay2">
+                <div class="arrow"></div>
+              </div>
+              <div class="arrowSliding delay3">
+                <div class="arrow"></div>
+              </div>
+            </div>
             <FAQ />
           </div>
         </div>
