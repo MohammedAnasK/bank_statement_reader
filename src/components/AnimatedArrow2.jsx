@@ -3,8 +3,12 @@ import React from "react";
 function AnimatedArrow2() {
   return (
     <div>
-      <div id="arrowAnim" className="align-middle">
-        <img src="pngwing.com.png" className="max-h-60  align-middle " alt="" />
+      <div id="arrowAnim" className="">
+        <img
+          src="pngwing.com.png"
+          className="max-h-80  pt-10  max-md pb-7"
+          alt=""
+        />
         <div class="arrowSliding">
           {/* <img
             src="https://cdn-icons-png.freepik.com/256/1329/1329333.png?uid=R140259584&ga=GA1.1.1577573904.1671458486&"
