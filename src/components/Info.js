@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Info = () => {
+    const Info = () => {
   //const imageUrl = 'bank.jpeg'; // Replace with your image URL
 
   return (
-    <div className="max-w-4xl  p-8 bg-gradient-to-br rounded-md my-8">
+    <div id='service' className="max-w-4xl  p-8 bg-gradient-to-br rounded-md my-8">
      
 
       <div className="flex-1 p-4">

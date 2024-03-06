@@ -151,22 +151,28 @@ export default function Example() {
           </Popover>
 
           <a
-            href="#"
+            href="#service"
             className="text-3xl font-semibold leading-6 text-gray-900"
           >
-            Features
+            Services
           </a>
           <a
             href="#"
             className="text-3xl font-semibold leading-6 text-gray-900"
           >
-            Marketplace
+          Animation
           </a>
           <a
-            href="#"
+            href="#review"
             className="text-3xl font-semibold leading-6 text-gray-900"
           >
-            Company
+           Review
+          </a>
+          <a
+            href="#faq"
+            className="text-3xl font-semibold leading-6 text-gray-900"
+          >
+           FAQ
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -239,19 +245,25 @@ export default function Example() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Services
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Animation
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Review
+                </a>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                   FAQ
                 </a>
               </div>
               <div className="py-6 ">

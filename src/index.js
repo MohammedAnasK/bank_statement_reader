@@ -7,7 +7,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode >
+    <div className='scroll-smooth focus'>
     <App/>
+    </div>
   </React.StrictMode>
 );
 

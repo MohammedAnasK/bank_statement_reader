@@ -26,7 +26,7 @@ const Faq = () => {
               onClick={() => toggleAccordion(`accordion-button-${index}`)}
               className="relative block w-full text-left py-4 px-0 text-text font-normal bg-none outline-none hover:text-blue focus:text-blue"
             >
-              <span className="accordion-title pr-6">Accordion Title {index}</span>
+              <span className="accordion-title pr-6 ">Accordion Title {index}</span>
               <span className="icon absolute top-4 right-0 w-5 h-5 border border-solid border-black">
                 {expandedAccordion === `accordion-button-${index}` ? (
                   <FiMinus className="w-full h-full" />

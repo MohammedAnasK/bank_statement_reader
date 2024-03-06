@@ -40,11 +40,11 @@ function App() {
           </div>
         </div>
         <div className="">
-          <div className=" bg-slate-500">
+          <div id="review" className=" bg-slate-500">
             <TestimonialSection16 />
           </div>
 
-          <div className=" bg-amber-500 p-10 ">
+          <div id="faq" className=" bg-amber-500 p-10 ">
             <FAQ />
           </div>
         </div>
@@ -56,8 +56,10 @@ function App() {
         </div>
       </div>
       <button
+      
         onClick={Top}
-        className=" bg-white bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-10 max-md:  "
+        className="bg-white bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-10 max-md:  "
+
       ></button>
     </>
   );
