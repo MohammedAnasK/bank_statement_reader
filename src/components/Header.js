@@ -152,33 +152,33 @@ export default function Example() {
 
           <a
             href="#service"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
           >
             Services
           </a>
           <a
-            href="#animation"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            href="#"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
-          Animation
+            Animation
           </a>
           <a
             href="#review"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
-           Review
+            Review
           </a>
           <a
             href="#faq"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
-           FAQ
+            FAQ
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end   ">
           <a
             href="#"
-            className="text-3xl font-semibold leading-6 text-gray-900 hover:text-white "
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white  active:text-red-500"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
@@ -186,12 +186,12 @@ export default function Example() {
       </nav>
       <Dialog
         as="div"
-        className="lg:hidden"
+        className="  lg:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-amber-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-10 " />
+        <Dialog.Panel className="fixed top-0  right-0 z-10 w-full overflow-y-auto bg-amber-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -263,7 +263,7 @@ export default function Example() {
                   href="#faq"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                   FAQ
+                  FAQ
                 </a>
               </div>
               <div className="py-6 ">
