@@ -152,25 +152,25 @@ export default function Example() {
 
           <a
             href="#service"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
           >
             Services
           </a>
           <a
             href="#"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
             Animation
           </a>
           <a
             href="#review"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
             Review
           </a>
           <a
             href="#faq"
-            className="text-3xl font-semibold leading-6 text-gray-900"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
             FAQ
           </a>
@@ -178,7 +178,7 @@ export default function Example() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end   ">
           <a
             href="#"
-            className="text-3xl font-semibold leading-6 text-gray-900 hover:text-white "
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white  active:text-red-500"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
@@ -191,7 +191,7 @@ export default function Example() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10 " />
-        <Dialog.Panel className="fixed top-0  right-0 z-10 w-full overflow-y-auto bg-amber-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed top-0  right-0 z-10 w-full overflow-y-auto bg-amber-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
