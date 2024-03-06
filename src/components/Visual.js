@@ -6,7 +6,7 @@ import AnimatedArrow2 from "./AnimatedArrow2";
 
 const Visual = () => {
   return (
-    <div className=" text-white  flex">
+    <div   className=" text-white  flex">
       {/* <img src={require("src/assets/money.png")} alt="img" /> */}
       {/* <img src="{money}" alt="1" /> */}
       {/* <img src="src/assets/money.png" alt="" /> */}

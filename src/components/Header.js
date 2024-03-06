@@ -157,7 +157,7 @@ export default function Example() {
             Services
           </a>
           <a
-            href="#"
+            href="#animation"
             className="text-3xl font-semibold leading-6 text-gray-900"
           >
           Animation
@@ -242,25 +242,25 @@ export default function Example() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="#service"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Services
                 </a>
                 <a
-                  href="#"
+                  href="#animation"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Animation
                 </a>
                 <a
-                  href="#"
+                  href="#review"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Review
                 </a>
                 <a
-                  href="#"
+                  href="#faq"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                    FAQ

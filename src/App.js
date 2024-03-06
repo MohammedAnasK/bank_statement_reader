@@ -1,5 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Example from "./components/Header";
 import Info from "./components/Info";
@@ -18,34 +19,30 @@ function App() {
         <div className="h-dvh ">
           <header>
             {" "}
-            <Example />{" "}
+            <Example />
+            {" "}
           </header>
-          <div className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
-            <div>
-              <h1 className="text-amber-500  text-8xl max-md:text-7xl line-clamp-7">
-                Transfer Your Bank Statments
-                <br />
-                <span>Into Tally</span>
-                <br />
-                With Just One Click
-              </h1>
-            </div>
+          <div  className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
+            <Banner/>
           </div>
         </div>
         {/* <div className="h-dvh bg-black"> */}
-        <div className=" bg-amber-500 ">
+        <div id="service" className=" bg-amber-500 ">
           <Info />
+        
         </div>
-        <div className="  bg-slate-950 ">
+        <div id="animation">
+        <div  className=" bg-slate-950 ">
           <Visual />
         </div>
+        </div>
         {/* </div> */}
-        <div className="">
-          <div className=" bg-amber-500 text-center">
+        <div id="review" className="">
+          <div  className=" bg-amber-500 text-center">
             <TestimonialSection16 />
           </div>
 
-          <div className=" bg-slate-950 p-10 ">
+          <div id="faq" className=" bg-slate-950 p-10 ">
             <FAQ />
           </div>
         </div>
