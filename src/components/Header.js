@@ -149,19 +149,25 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
+          <a
+            href="#"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
+          >
+         Home
+          </a>
 
           <a
             href="#service"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
           >
-            Services
+            Service
           </a>
-          <a
+          {/* <a
             href="#"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
             Animation
-          </a>
+          </a> */}
           <a
             href="#review"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
@@ -173,6 +179,12 @@ export default function Example() {
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
             FAQ
+          </a>
+          <a
+            href="#footer"
+            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
+          >
+          Contact
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end   ">
@@ -245,14 +257,14 @@ export default function Example() {
                   href="#service"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Services
+                  Service
                 </a>
-                <a
+                {/* <a
                   href="#animation"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Animation
-                </a>
+                </a> */}
                 <a
                   href="#review"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -265,6 +277,13 @@ export default function Example() {
                 >
                   FAQ
                 </a>
+                <a
+                  href="#footer"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Contact
+                </a>
+                
               </div>
               <div className="py-6 ">
                 <a

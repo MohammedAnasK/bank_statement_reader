@@ -18,19 +18,19 @@ const Footer = () => {
                 </a>
                 <div className="mt-14 xl:mt-20">
                   <nav className="flex flex-wrap justify-center text-lg font-medium">
-                    <div className="px-5 py-2">
+                    <div className="px-5 py-2 hover:underline">
                       <a href="#">Contact</a>
                     </div>
-                    <div className="px-5 py-2">
+                    <div className="px-5 py-2  hover:underline">
                       <a href="#">Pricing</a>
                     </div>
-                    <div className="px-5 py-2">
+                    <div className="px-5 py-2  hover:underline">
                       <a href="#">Privacy</a>
                     </div>
-                    <div className="px-5 py-2">
+                    <div className="px-5 py-2  hover:underline">
                       <a href="#">Terms</a>
                     </div>
-                    <div className="px-5 py-2">
+                    <div className="px-5 py-2  hover:underline">
                       <a href="#">Twitter</a>
                     </div>
                   </nav>
