@@ -156,12 +156,12 @@ export default function Example() {
           >
             Services
           </a>
-          <a
+          {/* <a
             href="#"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
             Animation
-          </a>
+          </a> */}
           <a
             href="#review"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
@@ -190,7 +190,7 @@ export default function Example() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10 " />
+        <div className=" inset-0  " />
         <Dialog.Panel className="fixed top-0  right-0 z-10 w-full overflow-y-auto bg-amber-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
@@ -247,12 +247,12 @@ export default function Example() {
                 >
                   Services
                 </a>
-                <a
+                {/* <a
                   href="#animation"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Animation
-                </a>
+                </a> */}
                 <a
                   href="#review"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
