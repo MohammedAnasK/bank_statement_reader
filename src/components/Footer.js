@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
     <div>
+
        <footer className=" xl: mx-auto w-full relative text-center bg-amber-500 text-black">
               <div className="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">
                 <h2 className="font-bold text-3xl xl:text-4xl leading-snug">
@@ -36,10 +37,27 @@ const Footer = () => {
                   </nav>
                   <p className="mt-7 text-base">© 2023 XYZ, LLC</p>
                 </div>
-              </div>
-            </footer>
-    </div>
-  )
-}
 
-export default Footer
+              </div>
+              <div className="px-5 py-2">
+                <a href="#">Pricing</a>
+              </div>
+              <div className="px-5 py-2">
+                <a href="#">Privacy</a>
+              </div>
+              <div className="px-5 py-2">
+                <a href="#">Terms</a>
+              </div>
+              <div className="px-5 py-2">
+                <a href="#">Twitter</a>
+              </div>
+            </nav>
+            <p className="mt-7 text-base">© 2023 XYZ, LLC</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Footer;
