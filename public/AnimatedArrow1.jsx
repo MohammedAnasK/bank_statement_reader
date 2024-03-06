@@ -1,0 +1,33 @@
+import React from "react";
+
+function AnimatedArrow1() {
+  return (
+    <div className="h-full">
+      <div id="arrowAnim" className="">
+        <img
+          src="https://cdn-icons-png.freepik.com/256/10317/10317690.png?uid=R140259584&ga=GA1.1.1577573904.1671458486&"
+          alt=""
+        />
+        <div class="arrowSliding">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/10317/10317690.png?uid=R140259584&ga=GA1.1.1577573904.1671458486&"
+            alt=""
+          />
+          {/* <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay1">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay2">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay3">
+          <div class="arrow"></div> */}
+        </div>
+        <div className=" ">{/* <h1>this</h1> */}</div>
+      </div>
+    </div>
+  );
+}
+
+export default AnimatedArrow1;
