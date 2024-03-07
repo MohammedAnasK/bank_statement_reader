@@ -22,6 +22,7 @@ const Process = () => {
             src="clip2.gif"
             alt="Computer man"
             className="h- w-1/4 rounded-lg"
+            
           />
         </div>
         <div className="text">
