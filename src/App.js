@@ -8,6 +8,8 @@ import FAQ from "./components/Q&A";
 import Visual from "./components/Visual";
 import TestimonialSection16 from "./components/testemonycard";
 import Home from "./components/Home";
+import { Tooltip } from "@material-tailwind/react";
+import Process from "./components/Process";
 // import AnimatedArrow from "./components/AnimatedArrow";
 
 function App() {
@@ -33,6 +35,12 @@ function App() {
         
         </div>
         <div id="animation">
+        <div  className="bg-slate-950 ">
+          <Process/>
+          </div>
+        </div>
+        
+        <div id="animation">
         <div  className=" bg-slate-950 ">
           <Visual />
         </div>
@@ -54,6 +62,7 @@ function App() {
         </div>
       </div>
       {/* </div> */}
+      <Tooltip content="Click To Top">
       <button
         onClick={Top}
         className="bg-red-500 border-4  border-sky-300 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-14 w-14 m-5  active:bg-red-600 max-md:  "
@@ -64,6 +73,7 @@ function App() {
           className="p-3 "
         />
       </button>
+      </Tooltip>
     </>
   );
 }
