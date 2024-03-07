@@ -20,26 +20,24 @@ function App() {
         <div className=" ">
           <header>
             {" "}
-            <Example />
-            {" "}
+            <Example />{" "}
           </header>
-          <div  className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
-            <Home/>
+          <div className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
+            <Home />
           </div>
         </div>
         {/* <div className="h-dvh bg-black"> */}
         <div id="service" className=" bg-amber-500 ">
           <Info />
-        
         </div>
         <div id="animation">
-        <div  className=" bg-slate-950 ">
-          <Visual />
-        </div>
+          <div className=" bg-slate-950 ">
+            <Visual />
+          </div>
         </div>
         {/* </div> */}
         <div id="review" className="">
-          <div  className=" bg-amber-500 text-center">
+          <div className=" bg-amber-500 text-center">
             <TestimonialSection16 />
           </div>
 
@@ -56,7 +54,7 @@ function App() {
       {/* </div> */}
       <button
         onClick={Top}
-        className="bg-red-500 border-4  border-sky-300 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-14 w-14 m-5  active:bg-red-600 max-md:  "
+        className="bg-red-500 border-4  border-sky-300 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-5  active:bg-red-600 max-md:  "
       >
         <img
           src="https://cdn-icons-png.flaticon.com/128/130/130906.png"
