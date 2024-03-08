@@ -178,7 +178,7 @@ export default function Example() {
             href="#"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
           >
-         Home
+            Home
           </a>
 
           <a
@@ -209,7 +209,7 @@ export default function Example() {
             href="#footer"
             className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
           >
-          Contact
+            Contact
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end   ">
@@ -308,7 +308,6 @@ export default function Example() {
                 >
                   Contact
                 </a>
-                
               </div>
               <div className="py-6 ">
                 <a
