@@ -8,15 +8,13 @@ import FAQ from "./components/Q&A";
 import Visual from "./components/Visual";
 import TestimonialSection16 from "./components/testemonycard";
 import Home from "./components/Home";
-import { Tooltip } from "@material-tailwind/react";
 import Process from "./components/Process";
+import Button from "./components/Button";
 
 import Slide from "./components/Slide";
 
 function App() {
-  const Top = () => {
-    window.scrollTo(0, 0);
-  };
+ 
   return (
     <>
       <div className=" bg-slate-700 h-dvh ">
@@ -67,14 +65,10 @@ function App() {
         </div>
       </div>
       {/* </div> */}
-      <Tooltip content="Click To Top">
-        <button
-          onClick={Top}
-          className="bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950  border-4  border-slate-500 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-5  active:bg-red-600 max-md:  "
-        >
-          <img src="arrow-141-48.png" alt="" className="p-5 " />
-        </button>
-      </Tooltip>
+
+      <Button/>
+
+
     </>
   );
 }
