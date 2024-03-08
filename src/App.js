@@ -43,6 +43,7 @@ function App() {
             <Visual />
           </div>
         </div>
+
         {/* </div> */}
         <div id="review" className="">
           <div className=" bg-slate-950 text-center">
