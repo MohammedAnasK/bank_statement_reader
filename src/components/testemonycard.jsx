@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Card,
   CardBody,
@@ -9,12 +12,13 @@ function TestimonialCard({ img, client, title, clientInfo }) {
   return (
     <Card
       shadow={false}
-      className="bg-slate-950 rounded-2xl p-6  text-center align-middle"
+      className="bg-slate-950 rounded-2xl p-6 text-center align-middle"
+      data-aos="fade-up" // Add the desired animation effect here
     >
       <CardHeader color="transparent" floated={false} shadow={false}>
         <Typography
-          // color="blue-gray"
-          className="lg:mb-20  text-2xl font-bold text-amber-500 align-middle"
+        // Add the desired animation effect here
+          className="lg:mb-20 text-2xl font-bold text-amber-500 align-middle"
         >
           &quot;{title}&quot;
         </Typography>
@@ -24,10 +28,7 @@ function TestimonialCard({ img, client, title, clientInfo }) {
           <Typography variant="h6" className="text-amber-500">
             {client}
           </Typography>
-          <Typography
-            variant="paragraph"
-            className="font-normal !text-amber-500"
-          >
+          <Typography variant="paragraph" className="font-normal !text-amber-500">
             {clientInfo}
           </Typography>
         </div>
@@ -55,17 +56,23 @@ const testimonials = [
 ];
 
 export function TestimonialSection16() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section className="px-8 py-10 lg:py-28">
       <div className="container mx-auto">
         <Typography
+          // Add the desired animation effect here
           variant="h2"
           color="blue-gray"
           className="mb-4 !text-2xl lg:!text-5xl font-extrabold"
         >
-          The heartfelt testimonials of our coustomers
+          The heartfelt testimonials of our customers
         </Typography>
         <Typography
+          data-aos="fade-left" // Add the desired animation effect here
           variant="lead"
           className="max-w-3xl !text-gray-500 mb-10 lg:mb-20"
         ></Typography>
@@ -77,11 +84,12 @@ export function TestimonialSection16() {
 
         <Card
           shadow={false}
-          className="mt-8 bg-slate-950 text-center rounded-2xl p-6 "
+          className="mt-8 bg-slate-950 text-center rounded-2xl p-6"
+          data-aos="fade-up" // Add the desired animation effect here
         >
           <CardHeader color="transparent" floated={false} shadow={false}>
             <Typography
-              // color="blue-gray"
+             // Add the desired animation effect here
               className="mb-4 !text-2xl lg:!text-3xl max-w-4xl !leading-snug mx-auto font-bold text-amber-500"
             >
               &quot;Its intuitive design and powerful features make it
@@ -98,10 +106,7 @@ export function TestimonialSection16() {
             <Typography variant="h6" className="text-amber-500">
               Emma Roberts
             </Typography>
-            <Typography
-              variant="paragraph"
-              className="font-normal !text-amber-500"
-            >
+            <Typography variant="paragraph" className="font-normal !text-amber-500">
               Chief Executive @Spotify
             </Typography>
           </CardBody>

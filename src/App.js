@@ -8,17 +8,11 @@ import FAQ from "./components/Q&A";
 import Visual from "./components/Visual";
 import TestimonialSection16 from "./components/testemonycard";
 import Home from "./components/Home";
-import { Tooltip } from "@material-tailwind/react";
 import Process from "./components/Process";
-
-import Slide from './components/Slide'
-
-
+import Button from "./components/Button";
 
 function App() {
-  const Top = () => {
-    window.scrollTo(0, 0);
-  };
+ 
   return (
     <>
       <div className=" bg-slate-700 h-dvh ">
@@ -29,7 +23,7 @@ function App() {
             <Example />
           
          
-          <div className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
+          <div className="h-dvh bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
             <Home />
           </div>
         </div>
@@ -58,9 +52,7 @@ function App() {
             <FAQ />
             {/* <YourComponent /> */}
           </div>
-          <div>
-            <Slide/>
-          </div>
+          
         </div>
         {/* <div className="h-dvh"> */}
         {/* <div className="h-1/2 bg-slate-950 text-white">signup now</div> */}
@@ -69,18 +61,7 @@ function App() {
         </div>
       </div>
       {/* </div> */}
-      <Tooltip content="Click To Top">
-        <button
-          onClick={Top}
-          className="bg-red-500 border-4  border-sky-300 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-5  active:bg-red-600 max-md:  "
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/130/130906.png"
-            alt=""
-            className="p-3 "
-          />
-        </button>
-      </Tooltip>
+      <Button/>
     </>
   );
 }
