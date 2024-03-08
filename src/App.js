@@ -10,6 +10,8 @@ import TestimonialSection16 from "./components/testemonycard";
 import Home from "./components/Home";
 import { Tooltip } from "@material-tailwind/react";
 import Process from "./components/Process";
+import Slide from './components/Slide'
+
 // import AnimatedArrow from "./components/AnimatedArrow";
 
 function App() {
@@ -20,10 +22,12 @@ function App() {
     <>
       <div className=" bg-slate-700 h-dvh ">
         <div className=" ">
-          <header>
+          
             {" "}
-            <Example />{" "}
-          </header>
+          
+            <Example />
+          
+         
           <div className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
             <Home />
           </div>
@@ -51,6 +55,9 @@ function App() {
 
           <div id="faq" className=" bg-slate-950 p-10 ">
             <FAQ />
+          </div>
+          <div>
+            <Slide/>
           </div>
         </div>
         {/* <div className="h-dvh"> */}

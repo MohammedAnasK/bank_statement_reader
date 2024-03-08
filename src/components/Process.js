@@ -3,12 +3,13 @@ import React from 'react';
 const Process = () => {
   return (
     <div className="container mx-auto p-8">
+      
       <div className="grid grid-cols-2 gap-8 items-center justify-center max-md:grid-cols-1">
-        <div className="image">
+        <div className="image ">
           <img
             src="clip1.gif"
             alt="Computer man"
-            className="h- w-1/4 rounded-lg"
+            className="h- w-full rounded-lg"
           />
         </div>
         <div className="text">
@@ -21,8 +22,8 @@ const Process = () => {
           <img
             src="clip2.gif"
             alt="Computer man"
-            className="h- w-1/4 rounded-lg"
-            
+            className="h- w-full rounded-lg"
+
           />
         </div>
         <div className="text">
@@ -32,9 +33,9 @@ const Process = () => {
         </div>
         <div className="image">
           <img
-            src="clip2.gif"
+            src="clip3.gif"
             alt="Computer man"
-            className="h- w-1/4 rounded-lg"
+            className="h- w-full rounded-lg"
           />
         </div>
         <div className="text">

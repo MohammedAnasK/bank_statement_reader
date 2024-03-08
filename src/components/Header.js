@@ -1,5 +1,7 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState,useEffect } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+
+
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -58,9 +60,32 @@ function classNames(...classes) {
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(10);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(
+        (prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 0) ||
+          currentScrollPos < 10
+      );
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible]);
+
+
 
   return (
-    <header className="bg-amber-500 text-5xl fixed w-full z-50  shadow">
+    <header
+    className={`bg-amber-500 text-5xl fixed w-full z-50 shadow transition-transform ${
+      !visible ? "-translate-y-full" : ""
+    }`}
+  >
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 text-5xl"
         aria-label="Global"
@@ -298,5 +323,6 @@ export default function Example() {
         </Dialog.Panel>
       </Dialog>
     </header>
+   
   );
 }
