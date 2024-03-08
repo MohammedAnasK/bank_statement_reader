@@ -12,23 +12,23 @@ function TestimonialCard({ img, client, title, clientInfo }) {
   return (
     <Card
       shadow={false}
-      className="bg-slate-950 rounded-2xl p-6 text-center align-middle"
-      data-aos="fade-up" // Add the desired animation effect here
+      className="border-slate-700 shadow bg-gradient-to-br from-slate-800 to-slate-950 border-2  rounded-2xl p-6  text-center align-middle"
+      data-aos="fade-up"
     >
       <CardHeader color="transparent" floated={false} shadow={false}>
         <Typography
-        // Add the desired animation effect here
-          className="lg:mb-20 text-2xl font-bold text-amber-500 align-middle"
+          // color="blue-gray"
+          className="lg:mb-20  text-2xl font-bold text-white align-middle"
         >
           &quot;{title}&quot;
         </Typography>
       </CardHeader>
       <CardBody className="px-4 py-0 flex flex-wrap-reverse gap-x-6 justify-between items-center">
         <div>
-          <Typography variant="h6" className="text-amber-500">
+          <Typography variant="h6" className="text-white">
             {client}
           </Typography>
-          <Typography variant="paragraph" className="font-normal !text-amber-500">
+          <Typography variant="paragraph" className="font-normal !text-white">
             {clientInfo}
           </Typography>
         </div>
@@ -66,8 +66,8 @@ export function TestimonialSection16() {
         <Typography
           // Add the desired animation effect here
           variant="h2"
-          color="blue-gray"
-          className="mb-4 !text-2xl lg:!text-5xl font-extrabold"
+          // color="blue-gray"
+          className="mb-4 text-white !text-2xl lg:!text-5xl font-extrabold"
         >
           The heartfelt testimonials of our customers
         </Typography>
@@ -84,13 +84,13 @@ export function TestimonialSection16() {
 
         <Card
           shadow={false}
-          className="mt-8 bg-slate-950 text-center rounded-2xl p-6"
-          data-aos="fade-up" // Add the desired animation effect here
+          className="border-slate-700 shadow border-2 mt-8 bg-gradient-to-br from-slate-800 to-slate-950 text-center rounded-2xl p-6 "
+          data-aos="fade-up" 
         >
           <CardHeader color="transparent" floated={false} shadow={false}>
             <Typography
-             // Add the desired animation effect here
-              className="mb-4 !text-2xl lg:!text-3xl max-w-4xl !leading-snug mx-auto font-bold text-amber-500"
+              // color="blue-gray"
+              className="mb-4 !text-2xl lg:!text-3xl max-w-4xl !leading-snug mx-auto font-bold text-white"
             >
               &quot;Its intuitive design and powerful features make it
               indispensable. I can&apos;t imagine going back to life before
@@ -100,13 +100,13 @@ export function TestimonialSection16() {
           <CardBody className="items-center mx-auto py-2">
             {/* <img
               src="/image/spotify.svg"
-              className="max-w-[8rem] mx-auto grayscale text-amber-500"
+              className="max-w-[8rem] mx-auto grayscale text-white"
               alt="spotify"
             /> */}
-            <Typography variant="h6" className="text-amber-500">
+            <Typography variant="h6" className="text-white">
               Emma Roberts
             </Typography>
-            <Typography variant="paragraph" className="font-normal !text-amber-500">
+            <Typography variant="paragraph" className="font-normal !text-white">
               Chief Executive @Spotify
             </Typography>
           </CardBody>

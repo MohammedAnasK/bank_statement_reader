@@ -11,7 +11,7 @@ const Faq = () => {
   };
 
   return (
-    <div  className="bg-bg text-amber-500 container mx-auto p-16 max-md: w-full max-md:mx-0 max-md:p-0 ">
+    <div className=" text-white container mx-auto p-16 max-md: w-full max-md:mx-0 max-md:p-0 ">
       <h2 className="text-5xl  font-extrabold text-center mb-8 ">
         Frequently Asked Questions
       </h2>
@@ -19,7 +19,7 @@ const Faq = () => {
         {[1, 2, 3, 4].map((index) => (
           <div
             key={index}
-            className={`accordion-item border-b border-amber-500 ${
+            className={`accordion-item border-b border-slate-800 ${
               expandedAccordion === `accordion-button-${index}`
                 ? "border-black"
                 : ""
@@ -34,7 +34,7 @@ const Faq = () => {
               <span className="accordion-title pr-6 text-2xl ">
                 Accordion Title {index}
               </span>
-              <span className="icon absolute top-4 right-0 w-5 h-5 border border-solid border-amber-500">
+              <span className="icon absolute top-4 right-0 w-5 h-5 border border-solid border-slate-800">
                 {expandedAccordion === `accordion-button-${index}` ? (
                   <FiMinus className="w-full h-full" />
                 ) : (
