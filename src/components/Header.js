@@ -1,6 +1,5 @@
-import { Fragment, useState,useEffect } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-
 
 import {
   ArrowPathIcon,
@@ -78,19 +77,17 @@ export default function Example() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible]);
 
-
-
   return (
     <header
-    className={`bg-amber-500 text-5xl fixed w-full z-50 shadow transition-transform ${
-      !visible ? "-translate-y-full" : ""
-    }`}
-  >
+      className={`bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-5xl fixed w-full z-50 shadow transition-transform ${
+        !visible ? "-translate-y-full" : ""
+      }`}
+    >
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 text-5xl"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1 text-5xl  font-extrabold">
+        <div className="flex lg:flex-1 text-5xl  font-extrabold text-white">
           <a href="#" className="-m-1.5 p-1.5">
             {/* <span className="sr-only">Your Company</span>
             <img
@@ -104,7 +101,7 @@ export default function Example() {
         <div className="flex lg:hidden text-3xl">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-950"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -113,7 +110,7 @@ export default function Example() {
         </div>
         <Popover.Group className="hidden  lg:flex lg:gap-x-12">
           <Popover className="relative">
-            {/* <Popover.Button className="flex items-center gap-x-1 text-3xl font-semibold leading-6 text-gray-900">
+            {/* <Popover.Button className="flex items-center gap-x-1 text-3xl font-semibold leading-6 text-white">
               Product
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -146,7 +143,7 @@ export default function Example() {
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900 "
+                          className="block font-semibold text-white "
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -161,7 +158,7 @@ export default function Example() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-white hover:bg-gray-100"
                     >
                       <item.icon
                         className="h-5 w-5 flex-none text-gray-400"
@@ -176,38 +173,38 @@ export default function Example() {
           </Popover>
           <a
             href="#"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
+            className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500   "
           >
             Home
           </a>
 
           <a
             href="#service"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500   "
+            className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500   "
           >
             Service
           </a>
           {/* <a
             href="#"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
+            className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500"
           >
             Animation
           </a> */}
           <a
             href="#review"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
+            className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500"
           >
             Review
           </a>
           <a
             href="#faq"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
+            className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500"
           >
             FAQ
           </a>
           <a
             href="#footer"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white active:text-red-500"
+            className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500"
           >
             Contact
           </a>
@@ -215,7 +212,7 @@ export default function Example() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end   ">
           <a
             href="#"
-            className="text-3xl font-semibold leading-6 text-slate-950 hover:text-white  active:text-red-500"
+            className="text-3xl font-semibold leading-6 text-white hover:text-white  active:text-red-500"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
@@ -228,16 +225,8 @@ export default function Example() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10 " />
-        <Dialog.Panel className="fixed top-0  right-0 z-10 w-full overflow-y-auto bg-amber-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow">
+        <Dialog.Panel className="fixed top-0  right-0 z-10 w-full overflow-y-auto bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -253,7 +242,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      {/* <Disclosure.Button className="flex w-full  items-center justify-between rounded-lg py-2 pl-3 pr-3.5  font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      {/* <Disclosure.Button className="flex w-full  items-center justify-between rounded-lg py-2 pl-3 pr-3.5  font-semibold leading-7 text-white hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(
@@ -269,7 +258,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -280,31 +269,31 @@ export default function Example() {
                 </Disclosure>
                 <a
                   href="#service"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                 >
                   Service
                 </a>
                 {/* <a
                   href="#animation"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                 >
                   Animation
                 </a> */}
                 <a
                   href="#review"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                 >
                   Review
                 </a>
                 <a
                   href="#faq"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                 >
                   FAQ
                 </a>
                 <a
                   href="#footer"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                 >
                   Contact
                 </a>
@@ -312,7 +301,7 @@ export default function Example() {
               <div className="py-6 ">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5  font-semibold leading-7 text-gray-900 hover:bg-gray-50 text-3xl"
+                  className="-mx-3 block rounded-lg px-3 py-2.5  font-semibold leading-7 text-white hover:bg-gray-50 text-3xl"
                 >
                   Log in
                 </a>
@@ -322,6 +311,5 @@ export default function Example() {
         </Dialog.Panel>
       </Dialog>
     </header>
-   
   );
 }
