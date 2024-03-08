@@ -10,6 +10,7 @@ import TestimonialSection16 from "./components/testemonycard";
 import Home from "./components/Home";
 import { Tooltip } from "@material-tailwind/react";
 import Process from "./components/Process";
+// import YourComponent from "./components/Slidein";
 // import AnimatedArrow from "./components/AnimatedArrow";
 
 function App() {
@@ -33,15 +34,15 @@ function App() {
           <Info />
         </div>
         <div id="animation">
-        <div  className="bg-slate-950 ">
-          <Process/>
+          <div className="bg-slate-950 ">
+            <Process />
           </div>
         </div>
-        
+
         <div id="animation">
-        <div  className=" bg-slate-950 ">
-          <Visual />
-        </div>
+          <div className=" bg-slate-950 ">
+            <Visual />
+          </div>
         </div>
         {/* </div> */}
         <div id="review" className="">
@@ -51,6 +52,7 @@ function App() {
 
           <div id="faq" className=" bg-slate-950 p-10 ">
             <FAQ />
+            {/* <YourComponent /> */}
           </div>
         </div>
         {/* <div className="h-dvh"> */}
@@ -61,16 +63,16 @@ function App() {
       </div>
       {/* </div> */}
       <Tooltip content="Click To Top">
-      <button
-        onClick={Top}
-        className="bg-red-500 border-4  border-sky-300 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-5  active:bg-red-600 max-md:  "
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/130/130906.png"
-          alt=""
-          className="p-3 "
-        />
-      </button>
+        <button
+          onClick={Top}
+          className="bg-red-500 border-4  border-sky-300 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-5  active:bg-red-600 max-md:  "
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/130/130906.png"
+            alt=""
+            className="p-3 "
+          />
+        </button>
       </Tooltip>
     </>
   );
