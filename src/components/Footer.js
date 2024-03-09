@@ -11,10 +11,12 @@ const Footer = () => {
             Start your free trial today.
           </h2>
           <a
-            className="mt-8 text-white xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-slate-950 rounded-full shadow-xl border border-transparent hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
+            className="mt-8 text-white xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-slate-950 rounded-full shadow-xl border-2 border-whtie hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
             href="#"
           >
-            Sign Up
+            <span className="animate-text bg-gradient-to-br   from-sky-500 via-teal-500  to-white bg-clip-text text-transparent  font-black">
+              Sign Up
+            </span>
           </a>
           <div className="mt-14 xl:mt-20">
             <nav className="flex flex-wrap justify-center text-lg font-medium">

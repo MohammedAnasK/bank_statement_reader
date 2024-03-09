@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Tooltip } from "@material-tailwind/react";
+import React, { useState, useEffect } from "react";
+
 
 const Button = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -23,34 +23,29 @@ const Button = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    
-    const AOS = require('aos');
+    const AOS = require("aos");
     AOS.init({
-      duration: 500, 
+      duration: 400,
     });
   }, []);
 
   return (
     <div>
       {visible && (
-        <Tooltip content="Click To Top">
+      
           <button
             onClick={scrollToTop}
-            className={`fade-buttonbg-gradient-to-b from-slate-800 via-slate-900 to-slate-950  border-4  border-slate-500 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-5  active:bg-red-600 max-md: `}
-            data-aos="fade-left" 
+            className={`fade-buttonbg-gradient-to-b from-slate-800 via-slate-900 to-slate-950  border-4  border-slate-500 bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-14 w-14 m-5  active:bg-red-600 max-md: `}
+            data-aos="fade-left"
           >
-            <img
-              src="arrow-141-48.png"
-              alt=""
-              className="p-3"
-            />
+            <img src="arrow-141-48.png" alt="" className="p-3" />
           </button>
-        </Tooltip>
+     
       )}
     </div>
   );

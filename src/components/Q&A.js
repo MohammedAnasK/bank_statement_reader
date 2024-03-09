@@ -19,7 +19,7 @@ const Faq = () => {
         {[1, 2, 3, 4].map((index) => (
           <div
             key={index}
-            className={`accordion-item border-b border-slate-800 ${
+            className={`accordion-item border-b p-4 border-slate-800 ${
               expandedAccordion === `accordion-button-${index}`
                 ? "border-black"
                 : ""
@@ -45,11 +45,11 @@ const Faq = () => {
             <div
               className={`accordion-content opacity-0 max-h-0  transition-all duration-200 ease-linear ${
                 expandedAccordion === `accordion-button-${index}`
-                  ? "opacity-100 max-h-36 mb-10"
+                  ? "opacity-100 max-h-96 "
                   : ""
               }`}
             >
-              <p className="text-xl font-light my-10  ">
+              <p className="text-xl font-light  pb-10 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Elementum sagittis vitae et leo duis ut. Ut tortor pretium
