@@ -9,15 +9,14 @@ const Home = () => {
   });
 
   return (
-    <div className="container mx-auto p-4">
+    <div className=" container mx-auto p-4">
       <animated.div style={fadeIn}>
         <div>
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-tight">
+          <h1 className="animate-pulse neon text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-tight">
             Transfer Your Bank Statements
             <br />
             <span>Into Tally</span>
             <br />
-            With Just One Click
           </h1>
         </div>
       </animated.div>

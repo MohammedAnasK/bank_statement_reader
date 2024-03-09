@@ -10,18 +10,23 @@ import TestimonialSection16 from "./components/testemonycard";
 import Home from "./components/Home";
 import Process from "./components/Process";
 import Button from "./components/Button";
+import MyComponent from "./components/animatedbackground";
+import * as THREE from "three";
+import BIRDS from "vanta/dist/vanta.birds.min";
 
 import Slide from "./components/Slide";
 
 function App() {
- 
   return (
     <>
       <div className=" bg-slate-700 h-dvh ">
+        {/* <div className="h-full w-full">
+          <MyComponent />
+        </div> */}
         <div className=" ">
           {" "}
           <Example />
-          <div className="h-dvh   bg-slate-950 text-center break-words font-extrabold flex  items-center justify-center leading-10">
+          <div className="h-dvh  bg-slate-950  text-center break-words font-extrabold flex  items-center justify-center leading-10">
             <Home />
           </div>
         </div>
@@ -66,9 +71,7 @@ function App() {
       </div>
       {/* </div> */}
 
-      <Button/>
-
-
+      <Button />
     </>
   );
 }

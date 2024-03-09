@@ -103,6 +103,8 @@ export default function Example() {
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}
+
+            // aria-hidden="false"
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -180,6 +182,7 @@ export default function Example() {
 
           <a
             href="#service"
+            // onClick={() => setMobileMenuOpen(false)}
             className="text-3xl font-semibold leading-6 text-white hover:text-white active:text-red-500   "
           >
             Service
@@ -231,6 +234,8 @@ export default function Example() {
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
+              aria-hidden="true"
+              // onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -240,9 +245,9 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10 ">
               <div className="space-y-3 py-8 ">
                 <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
-                      {/* <Disclosure.Button className="flex w-full  items-center justify-between rounded-lg py-2 pl-3 pr-3.5  font-semibold leading-7 text-white hover:bg-gray-50">
+                  {/* {({ open }) => ( */}
+                  <>
+                    {/* <Disclosure.Button className="flex w-full  items-center justify-between rounded-lg py-2 pl-3 pr-3.5  font-semibold leading-7 text-white hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(
@@ -251,25 +256,39 @@ export default function Example() {
                           )}
                           aria-hidden="true"
                         />
-                      </Disclosure.Button> */}
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
+                      // </Disclosure.Button> */}
+                    <Disclosure.Panel className="mt-2 space-y-2">
+                      {[...products, ...callsToAction].map((item) => (
+                        <Disclosure.Button
+                          key={item.name}
+                          as="a"
+                          href={item.href}
+                          className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50"
+                        >
+                          {item.name}
+                        </Disclosure.Button>
+                      ))}
+                    </Disclosure.Panel>
+                  </>
+                  {/* )} */}
                 </Disclosure>
+                <div className="flex  jus">
+                  <button
+                    type="button"
+                    className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                    onClick={() => setMobileMenuOpen(false)}
+                    aria-hidden="true"
+                    // onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span className="sr-only">Close menu</span>
+                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                  </button>
+                </div>
                 <a
                   href="#service"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  aria-hidden="true"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-500"
                 >
                   Service
                 </a>
@@ -281,19 +300,25 @@ export default function Example() {
                 </a> */}
                 <a
                   href="#review"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  aria-hidden="true"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-500"
                 >
                   Review
                 </a>
                 <a
                   href="#faq"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  aria-hidden="true"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-500"
                 >
                   FAQ
                 </a>
                 <a
                   href="#footer"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  aria-hidden="true"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-500"
                 >
                   Contact
                 </a>
@@ -301,7 +326,9 @@ export default function Example() {
               <div className="py-6 ">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5  font-semibold leading-7 text-white hover:bg-gray-50 text-3xl"
+                  aria-hidden="true"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2.5  font-semibold leading-7 text-white hover:bg-slate-500 text-3xl"
                 >
                   Log in
                 </a>
