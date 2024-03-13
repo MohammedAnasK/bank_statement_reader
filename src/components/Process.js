@@ -12,14 +12,14 @@ const Process = () => {
       <div className="grid grid-cols-1 gap-8 items-center justify-center max-md:grid-cols-1 max-md:border-0">
         {/* Step 1 */}
         <div
-          className="grid grid-cols-2 border-2 p-5 rounded-xl border-slate-700 shadow bg-gradient-to-br from-slate-800 to-transparent max-md:grid-cols-1 max-md:border-x-0 max-md:border-y-2 max-md:p-5"
+          className="grid grid-cols-2 border-2 p-5 rounded-xl border-slate-700 shadow  max-md:grid-cols-1 max-md:border-x-0 max-md:border-y-2 max-md:p-5"
           data-aos="fade-up"
         >
           <div className="image">
             <img
               src="video1.gif"
               alt="Computer man"
-              className="w-full rounded-lg"
+              className="w-full h-96 rounded-lg max-lg:h-full max-md:h-full max-xl:h-full"
             />
           </div>
           <div className="my-auto max-md:pt-5">
@@ -37,14 +37,14 @@ const Process = () => {
 
         {/* Step 2 */}
         <div
-          className="grid grid-cols-2 border-2 p-5 rounded-xl border-slate-700 shadow bg-gradient-to-br from-slate-800 to-transparent max-md:grid-cols-1"
+          className="grid grid-cols-2 border-2 p-5 rounded-xl border-slate-700 shadow  max-md:grid-cols-1 max-md:border-x-0 max-md:border-y-2 max-md:p-5"
           data-aos="fade-up"
         >
           <div className="image">
             <img
               src="video2.gif"
               alt="Computer man"
-              className="w-full rounded-lg"
+              className="w-full h-96 rounded-lg max-lg:h-full max-md:h-full max-xl:h-full"
             />
           </div>
           <div className="pl text my-auto max-md:pt-5">
@@ -64,14 +64,14 @@ const Process = () => {
 
         {/* Step 3 */}
         <div
-          className="grid grid-cols-2 border-2 p-5 rounded-xl border-slate-700 shadow bg-gradient-to-br from-slate-800 to-transparent max-md:grid-cols-1"
+          className="grid grid-cols-2 border-2 p-5 rounded-xl border-slate-700 shadow  max-md:grid-cols-1 max-md:border-x-0 max-md:border-y-2 max-md:p-5"
           data-aos="fade-up"
         >
           <div className="image">
             <img
               src="video3.gif"
               alt="Computer man"
-              className="w-full rounded-lg"
+              className="w-full h-96 rounded-lg max-lg:h-full max-md:h-full max-xl:h-full"
             />
           </div>
           <div className="pl text my-auto max-md:pt-5">

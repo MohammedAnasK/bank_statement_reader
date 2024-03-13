@@ -272,7 +272,7 @@ export default function Example() {
                   </>
                   {/* )} */}
                 </Disclosure>
-                <div className="flex  jus">
+                <div className="flex   justify-end">
                   <button
                     type="button"
                     className="-m-2.5 rounded-md p-2.5 text-gray-700"

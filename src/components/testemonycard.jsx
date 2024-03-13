@@ -41,17 +41,17 @@ function TestimonialCard({ img, client, title, clientInfo }) {
 const testimonials = [
   {
     title:
-      "The team went above and beyond to ensure my issue was resolved quickly and efficiently. Truly outstanding!",
+      "Fantastic platform! Easy-to-follow steps, and I love the manual transaction selection feature. It's a huge time-saver and ensures accuracy. Highly recommend!",
     client: "Jessica Devis",
-    clientInfo: "Full Stack Developer @Netflix",
-    img: "/image/netflix.svg",
+    clientInfo: "CA @xyz",
+    // img: "/image/netflix.svg",
   },
   {
     title:
-      "It have broadened my horizons and helped me advance my career. The community is incredibly supportive.",
+      "Best integration with Tally I've used. User-friendly interface and customizable options make it a standout. 'Send To Tally' feature is a lifesaver!",
     client: "Marcell Glock",
-    clientInfo: "Graphic Designer, @Coinbase",
-    img: "https://www.material-tailwind.com/image/Logo-coinbase.svg",
+    clientInfo: "Accountant, @xyz",
+    // img: "https://www.material-tailwind.com/image/Logo-coinbase.svg",
   },
 ];
 
@@ -85,16 +85,16 @@ export function TestimonialSection16() {
         <Card
           shadow={false}
           className="border-slate-700 shadow border-2 mt-8 bg-gradient-to-br from-slate-800 to-slate-950 text-center rounded-2xl p-6 "
-          data-aos="fade-up" 
+          data-aos="fade-up"
         >
           <CardHeader color="transparent" floated={false} shadow={false}>
             <Typography
               // color="blue-gray"
               className="mb-4 !text-2xl lg:!text-3xl max-w-4xl !leading-snug mx-auto font-bold text-white"
             >
-              &quot;Its intuitive design and powerful features make it
-              indispensable. I can&apos;t imagine going back to life before
-              it!&quot;
+              &quot;Simplified my accounting tasks tremendously! Viewing
+              transactions and selecting imports is effortless. Seamless
+              integration with Tally. Couldn't be happier!&quot;
             </Typography>
           </CardHeader>
           <CardBody className="items-center mx-auto py-2">
@@ -107,7 +107,7 @@ export function TestimonialSection16() {
               Emma Roberts
             </Typography>
             <Typography variant="paragraph" className="font-normal !text-white">
-              Chief Executive @Spotify
+              Bussines Owner @xyz
             </Typography>
           </CardBody>
         </Card>
