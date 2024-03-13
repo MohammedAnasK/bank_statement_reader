@@ -39,6 +39,9 @@ function App() {
         </div>
         <div id="animation">
           <div className="bg-slate-950 ">
+            <h1 className=" text-white text-5xl font-bold text-center py-10">
+              How to use BSR
+            </h1>
             <Process />
           </div>
         </div>
